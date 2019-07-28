@@ -26,11 +26,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\app.routes.ts" />
+    <None Remove="ClientApp\src\app\models\sign-in.model.ts" />
+    <None Remove="ClientApp\src\app\models\user.token.model.ts" />
+    <None Remove="ClientApp\src\app\services\index.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="BusinessLogicLayer\Services\" />
     <Folder Include="Controllers\ApiControllers\" />
     <Folder Include="DataAccessLayer\Entities\" />
     <Folder Include="Interfaces\ServiceInterfaces\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\app.routes.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\sign-in.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\user.token.model.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\index.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

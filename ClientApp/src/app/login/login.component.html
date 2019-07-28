@@ -1,0 +1,55 @@
+<div class="body-content">
+  <div class="box">
+    <div class="vertical-flow">
+      <p class="welcome-text"></p>
+      <div>
+      </div>
+      <form class="form-signin form vertical-flow vertical-flow--mini one-whole" id="login-form" novalidate [formGroup]="form">
+        <div class="grid one-whole" style="text-align: left">
+          <div class="one-sixth">&nbsp;</div>
+          <div class="four-sixths">
+            <div class="form__group login-input-container">
+              <label class="form-label" for="username">Username:</label>
+              <div class="margin-auto one-whole">
+                <input type="text" class="form-field margin-auto" id="username" formControlName="username">
+              </div>
+            </div>
+          </div>
+          <div class="one-sixth">&nbsp;</div>
+        </div>
+        <div class="grid one-whole" style="text-align: left">
+          <div class="one-sixth">&nbsp;</div>
+          <div class="four-sixths">
+            <div class="form__group login-input-container" style="padding-top: 20px;">
+              <label class="form-label" for="password"> Password: </label>
+              <div class="one-whole margin-auto">
+                <input type="password" class="form-field margin-auto" id="password" formControlName="password">
+              </div>
+            </div>
+          </div>
+          <div class="one-sixth">&nbsp;</div>
+        </div>
+        <div class="form__group">
+          <div class="horizontal-flow">
+            <div class="checkbox" style="justify-content: center; align-content: center; text-align: center;">
+              <input type="checkbox" class="checkbox__input is-hidden--text" id="rememberMe" formControlName="rememberMe">
+              <label class="checkbox__decor" for="rememberMe">
+                <svg class="icon" aria-hidden="true" role="presentation">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                </svg>
+              </label>
+              <label class="checkbox__label" for="rememberMe">Remember Me</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal__footer">
+          <div class="form__group">
+            <div class="button-group">
+              <button class="button" type="submit" id="login-btn" form="login-form" (click)="login()">Login</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+
+body {
+  background-color: white !important;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-input-container {
+  align-content: center;
+  justify-content: end;
+  display: flex;
+  flex-direction: row;
+}
+
+.field-validation-error {
+  color: red;
+}
+
+.form-label {
+  margin-right: 10px;
+  top: 15px;
+}
+
+#centre-container {
+  background-color: red;
+}
+
+.box {
+  position: absolute;
+  top: 60px;
+  background-color: #f5f1f1;
+  border: none;
+  height: 100vh;
+  border-radius: 0;
+}
+
+.modal__footer {
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 0;
+  position: absolute;
+  bottom: 50px;
+  left: -2px;
+  width: 100%;
+  margin: 0;
+}
+
+.link-button {
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+.checkbox {
+  white-space: nowrap;
+}
+
+.checkbox__label {
+  width: calc(100% - 300px);
+}
